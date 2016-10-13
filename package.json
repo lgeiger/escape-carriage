@@ -1,0 +1,31 @@
+{
+  "name": "escape-carriage",
+  "version": "1.0.0",
+  "description": "Escape carriage return the right way.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgeiger/escape-carriage.git"
+  },
+  "keywords": [
+    "carriage",
+    "escape",
+    "return"
+  ],
+  "author": "Lukas Geiger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lgeiger/escape-carriage/issues"
+  },
+  "homepage": "https://github.com/lgeiger/escape-carriage#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
