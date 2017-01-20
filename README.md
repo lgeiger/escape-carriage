@@ -1,8 +1,7 @@
 # escape-carriage
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/escape-carriage.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/lgeiger/escape-carriage.svg?branch=master)](https://travis-ci.org/lgeiger/escape-carriage) [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/escape-carriage.svg)](https://greenkeeper.io/)
 
-[![Build Status](https://travis-ci.org/lgeiger/escape-carriage.svg?branch=master)](https://travis-ci.org/lgeiger/escape-carriage)
 
 Escape `\r` the right way.
 
