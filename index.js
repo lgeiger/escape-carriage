@@ -1,4 +1,5 @@
 function escapeCarriageReturn(txt) {
+  if(!txt) return '';
   txt = txt.replace(/\r+\n/gm, '\n'); // \r followed by \n --> newline
   while (txt.search(/\r[^$]/g) > -1) {
       var base = txt.match(/^(.*)\r+/m)[1];
