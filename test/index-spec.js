@@ -1,4 +1,4 @@
-var escapeCarriageReturn = require("../index").escapeCarriageReturn;
+var escapeCarriageReturn = require("../index");
 var escapeCarriageReturnSafe = require("../index").escapeCarriageReturnSafe;
 var expect = require("chai").expect;
 

@@ -3,7 +3,7 @@
  * @param {string} txt - String to escape.
  * @return {string}    - Escaped string.
  */
-function esc(txt) {
+function escapeCarriageReturn(txt) {
   if (!txt) return "";
   if (!/\r/.test(txt)) return txt;
   txt = txt.replace(/\r+\n/gm, "\n"); // \r followed by \n --> newline
@@ -26,7 +26,7 @@ function findLongestString(arr) {
   return longest;
 }
 
-function escSingleLineSafe(txt) {
+function escapeSingleLineSafe(txt) {
   if (!/\r/.test(txt)) return txt;
   var arr = txt.split("\r");
   var res = [];
@@ -48,14 +48,20 @@ function escSingleLineSafe(txt) {
  * @param {string} txt - String to escape.
  * @return {string}    - Escaped string.
  */
-function escSafe(txt) {
+function escapeCarriageReturnSafe(txt) {
   if (!txt) return "";
   if (!/\r/.test(txt)) return txt;
-  if (!/\n/.test(txt)) return escSingleLineSafe(txt);
+  if (!/\n/.test(txt)) return escapeSingleLineSafe(txt);
   txt = txt.replace(/\r+\n/gm, "\n"); // \r followed by \n --> newline
   var idx = txt.lastIndexOf("\n");
-  return esc(txt.slice(0, idx)) + "\n" + escSingleLineSafe(txt.slice(idx + 1));
+
+  return (
+    escapeCarriageReturn(txt.slice(0, idx)) +
+    "\n" +
+    escapeSingleLineSafe(txt.slice(idx + 1))
+  );
 }
 
-exports.escapeCarriageReturn = esc;
-exports.escapeCarriageReturnSafe = escSafe;
+module.exports = escapeCarriageReturn;
+module.exports.escapeCarriageReturn = escapeCarriageReturn;
+module.exports.escapeCarriageReturnSafe = escapeCarriageReturnSafe;
