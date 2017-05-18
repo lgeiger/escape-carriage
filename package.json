@@ -1,6 +1,6 @@
 {
   "name": "escape-carriage",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Escape carriage return the right way.",
   "main": "index.js",
   "directories": {
