@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Escape carriage return the right way.",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "test": "test"
   },
