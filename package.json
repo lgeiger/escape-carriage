@@ -27,6 +27,6 @@
   "homepage": "https://github.com/lgeiger/escape-carriage#readme",
   "devDependencies": {
     "chai": "^4.0.0",
-    "mocha": "^5.0.0"
+    "mocha": "^6.0.0"
   }
 }
