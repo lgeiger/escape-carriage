@@ -25,7 +25,7 @@ describe("Escape carrigage return", function() {
       "1\r"
     ].join("");
 
-    var output = ["hasrn\n", "hasn\n", "\n", "hellof\n", "123"].join("");
+    var output = ["hasrn\n", "hasn\n", "\n", "hellof\n", "123\r"].join("");
 
     expect(escapeCarriageReturn(input)).to.equal(output);
   });

@@ -7,8 +7,8 @@ function escapeCarriageReturn(txt) {
   if (!txt) return "";
   if (!/\r/.test(txt)) return txt;
   txt = txt.replace(/\r+\n/gm, "\n"); // \r followed by \n --> newline
-  while (/\r/.test(txt)) {
-    txt = txt.replace(/^([^\r\n]*)\r+([^\r\n]*)/gm, function (_, base, insert) {
+  while (/\r./.test(txt)) {
+    txt = txt.replace(/^([^\r\n]*)\r+([^\r\n]+)/gm, function (_, base, insert) {
       return insert + base.slice(insert.length);
     });
   }
